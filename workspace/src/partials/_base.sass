@@ -1,0 +1,39 @@
+!blueprint_font_family       = "Helvetica Neue, Arial, Helvetica, sans-serif"
+!blueprint_fixed_font_family = "'andale mono', 'lucida console', monospace"
+
+!blueprint_grid_columns = 20
+!blueprint_container_size = 900px
+!blueprint_grid_margin = 0px
+!blueprint_grid_width   = (!blueprint_container_size + !blueprint_grid_margin) / !blueprint_grid_columns - !blueprint_grid_margin
+
+
+!body_bg_color = #f8f8f8
+!body_stroke_color = #78411a
+!body_bg_text_color = #8a8a8a
+
+!nav_height = 46px
+!nav_padding = 9px
+
+!container_padding = 25px
+
+!href_color = #ef1610
+
+!article_title_color = #b11737
+!article_title_visited_color = #b11737
+!article_hover_color = #555
+
+!page_header_color = #9a1c1b
+
+
+
+=piped-list()
+	li 
+		padding: 0px
+		padding-left: 2px
+		padding-right: 2px
+	li:before
+		content: " |"
+	li:before, x:-moz-any-link, x:default
+		content: " | "
+	li:first-child:before
+		content: ""
