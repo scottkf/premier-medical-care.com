@@ -8,6 +8,8 @@
 	<div class="quotes">
 		<xsl:apply-templates select="testimonials/entry" />
 	</div>
+<h3>Any questions? Please don't hestitate to contact us!</h3>
+<p>You can call us at +1 (561) 745 0072, and you can find more detailed contact information <a href="{$root}/contact">by visiting the contact page and clicking here.</a></p>
 </xsl:template>
 
 </xsl:stylesheet>

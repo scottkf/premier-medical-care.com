@@ -25,19 +25,6 @@
 	</li>
 	<li class="alt">
 		<div class="left">
-			<a href="{$root}/milstein"><img src="{$workspace}/images/karen.jpg" class="photo" /></a>
-			<span><a href="{$root}/milstein">Curriculum Vitae</a></span>
-		</div>
-		<div class="right">
-			<span>Karen, Exercise Physiologist</span><br />
-			<small><em>Exercise physiologist, certified Athletic Trainer, ACSM Certified, Director / Consultant Cardiac Rehabilitation and Medical Fitness</em></small>
-			<p>
-				Karen Marchelletta holds a Masters degree from the University of Miami specializing in clinical exercise physiology. She has over 3 decades of experience in medical fitness and cardiac rehabilitation. As a former Pfizer pharmaceutical health care consultant Karen intimately understands the connection between lifestyle, health and quality of life.
-			</p>
-		</div>
-	</li>	
-	<li class="alt">
-		<div class="left">
 			<img src="{$workspace}/images/marla.jpg" class="photo" />
 			<span><a href="{$root}/milstein">Curriculum Vitae</a></span>
 		</div>
@@ -52,20 +39,24 @@
 			</p> -->
 		</div>
 	</li>
-	<li style="clear: both">
+	<li class="alt">
 		<div class="left">
-			<img src="{$workspace}/images/nurse.jpg" class="photo" />
-		</div>
+			<a href="{$root}/milstein"><img src="{$workspace}/images/karen.jpg" class="photo" /></a>
+			<span><a href="{$workspace}/files/karen.pdf">Curriculum Vitae</a></span>		</div>
 		<div class="right">
-			<span>Rickelle<br /><small>Medical Assistant</small></span><br />
+			<span>Karen, Exercise Physiologist</span><br />
+			<small><em>Exercise physiologist, certified Athletic Trainer, ACSM Certified, Director / Consultant Cardiac Rehabilitation and Medical Fitness</em></small>
+			<p>
+				Karen Marchelletta holds a Masters degree from the University of Miami specializing in clinical exercise physiology. She has over 3 decades of experience in medical fitness and cardiac rehabilitation. As a former Pfizer pharmaceutical health care consultant Karen intimately understands the connection between lifestyle, health and quality of life.
+			</p>
 		</div>
-	</li>
-	<li>
+	</li>	
+	<li style="clear: both">
 		<div class="left">
 			<img src="{$workspace}/images/manager.jpg" class="photo" />
 		</div>
 		<div class="right">
-			<span>Gloria<br /><small>Concierge Coordinator</small></span><br />
+			<span>Gloria<br /><small>Concierge Coordinator / Nurse</small></span><br />
 		</div>
 	</li>	
 	<li>
@@ -73,7 +64,15 @@
 			<img src="{$workspace}/images/tobi.jpg" class="photo" />
 		</div>
 		<div class="right">
-			<span>Tobi<br /><small>Front Desk Mafioso</small></span><br />
+			<span>Toby<br /><small>Receptionist / Front Desk </small></span><br />
+		</div>
+	</li>
+	<li>
+		<div class="left">
+			<img src="{$workspace}/images/nurse.jpg" class="photo" />
+		</div>
+		<div class="right">
+			<span>Rickelle<br /><small>Medical Assistant / Nurse</small></span><br />
 		</div>
 	</li>
 	<li>

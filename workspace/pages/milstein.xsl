@@ -39,7 +39,14 @@
 			<img class="photo" src="{$workspace}/images/milstein-kids-4.jpg" />
 		</div>
 	</div>
-	
+        <div class="two-column">
+		<div>
+			<img class="photo" src="{$workspace}/images/milstein-kids-5.jpg" />
+		</div>
+		<div class="last">
+			<img class="photo" src="{$workspace}/images/milstein-kids-6.jpg" />
+		</div>                
+        </div>
 
 </xsl:template>
 

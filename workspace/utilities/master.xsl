@@ -80,8 +80,8 @@
 			<div id="middle">
 				<h2>Contact Us</h2>
 				<address>
-					+1 561 745 0072<br />
-					Fax +1 561 745 0074
+					(561) 745-0072<br />
+					Fax (561) 745-0074
 				</address>
 			</div>
 			<div id="right">

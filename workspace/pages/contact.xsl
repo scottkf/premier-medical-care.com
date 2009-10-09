@@ -7,9 +7,9 @@
 <xsl:template match="data">
 	<div class="left">
 		<h3>Phone</h3>
-		<address>+1 561 745 0072</address>
+		<address><span style="font-style: normal; font-size: larger">(561) 745-0072</span></address>
 		<h3>Fax</h3>
-		<address>+1 561 745 0074</address>
+		<address><span style="font-style: normal; font-size: larger">(561) 745-0074</span></address>
 		<h3>Address</h3>
 		<address>
 			Admirals Professional Center<br />
