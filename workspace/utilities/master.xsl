@@ -35,7 +35,9 @@
 		<link rel="icon" type="images/png" href="{$workspace}/images/icons/bookmark.png" />
 		<link rel="stylesheet" href="{$workspace}/css/screen.css" type="text/css" media="screen, projection" />
 		<link rel="stylesheet" href="{$workspace}/css/print.css" type="text/css" media="print" />
-		<!--[if IE]><link rel="stylesheet" href="{$workspace}/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		<xsl:text disable-output-escaping="yes">&lt;!--[if IE ]></xsl:text>
+			<link rel="stylesheet" type="text/css" media="screen, projection" href="{$workspace}/css/ie.css"/>
+		<xsl:text disable-output-escaping="yes">&lt;![endif]--></xsl:text>
 		<link rel="stylesheet" type="text/css" media="screen" href="{$workspace}/css/colorbox.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 		<script type="text/javascript" src="{$workspace}/javascript/jquery.colorbox-min.js"></script>

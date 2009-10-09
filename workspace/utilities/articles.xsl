@@ -4,7 +4,7 @@
 
 
 <xsl:template match="articles/entry">
-	<div class="news">
+	<div class="news news{position()}">
 		<div class="title">
 			<xsl:copy-of select="title/* | title/text()" />
 		</div>
