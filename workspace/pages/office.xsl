@@ -102,7 +102,7 @@
 		<div class="right">
 			<span>Rickelle<br /><small>Licensed Practical Nurse (LPN)</small></span>
 			<p>
-				Rick is an LPN who has workd with Dr. Milstein since 1997. She also has a certification in surgical technology and has worked in the operating room at St. Mary's Medical Center for several years. Rickelle is the mother of three beautiful children and is busy managing her husband's marina during her free time.
+				Rickelle is an LPN who has workd with Dr. Milstein since 1997. She also has a certification in surgical technology and has worked in the operating room at St. Mary's Medical Center for several years. Rickelle is the mother of three beautiful children and is busy managing her husband's marina during her free time.
 			</p>
 		</div>
 	</li>

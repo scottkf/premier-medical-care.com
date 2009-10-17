@@ -38,6 +38,21 @@
         </xsl:choose>
       </label>
     </xsl:for-each>
+    <fieldset>
+      <div>
+      	<h3>To request further information, fill out the form below completely.</h3>
+      	<h5>All fields are required.</h5>
+        <label class="required">Your name<input type="text" name="fields[name]" value="{events/request-information/post-values/name}" /></label>
+        <label class="required">Email Address<input type="text" name="fields[email]" value="{events/request-information/post-values/email}" /></label>
+        <input name="send-email[recipient]" value="mdmilstein" type="hidden" />
+        <input name="send-email[sender-email]" value="fields[email]" type="hidden" />
+        <input name="send-email[sender-name]" value="fields[name]" type="hidden" />
+        <input name="send-email[subject]" value="Someone requested further information!" type="hidden" />
+        <input name="send-email[body]" value="fields[email],fields[name]" type="hidden" />
+        <input id="submit" type="submit" name="action[request-information]" value="Submit the form" />
+      </div>
+     </fieldset>
+   </form><hr />
 		<xsl:call-template name="get-google-map">
 			<xsl:with-param name="map-type" select="'HYBRID'"/>
 			<xsl:with-param name="zoom-level" select="'17'"/>
@@ -49,22 +64,6 @@
 			<xsl:with-param name="map-width" select="'500px'"/>
 			<xsl:with-param name="map-height" select="'350px'"/>
 		</xsl:call-template>
-        <hr />
-    <fieldset>
-      <div>
-      	<h3>To request further information, fill out the form below completely.</h3>
-      	<h5>All fields are required.</h5>
-        <label class="required">Your name<input type="text" name="fields[name]" value="{events/request-information/post-values/name}" /></label>
-        <label class="required">Email Address<input type="text" name="fields[email]" value="{events/request-information/post-values/email}" /></label>
-        <input name="send-email[recipient]" value="scott" type="hidden" />
-        <input name="send-email[sender-email]" value="fields[email]" type="hidden" />
-        <input name="send-email[sender-name]" value="fields[name]" type="hidden" />
-        <input name="send-email[subject]" value="Someone requested further information!" type="hidden" />
-        <input name="send-email[body]" value="fields[email],fields[name]" type="hidden" />
-        <input id="submit" type="submit" name="action[request-information]" value="Submit the form" />
-      </div>
-     </fieldset>
-   </form>
 	</div>
 </xsl:template>
 

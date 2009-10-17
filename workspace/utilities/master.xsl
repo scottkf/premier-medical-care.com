@@ -60,7 +60,7 @@
 	<div id="container">
 		<div id="header">
 			<div id="logo">
-				<a href="{$root}"><img src="{$workspace}/images/pmc-logo.jpg" /></a>
+				<a href="{$root}"><img alt="premier medical care of the palm beaches" title="premier medical care of the palm beaches" src="{$workspace}/images/pmc-logo.jpg" /></a>
 			</div>
 			<xsl:apply-templates select="data/articles/entry" />
 		</div>

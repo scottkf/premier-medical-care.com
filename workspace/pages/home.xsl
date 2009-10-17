@@ -14,22 +14,9 @@
                         <img src="{$workspace}/images/slideshow4.jpg" class="photo" />
                         <img src="{$workspace}/images/slideshow5.jpg" class="photo" />
                 </div><div style="clear: both"></div>
-<!--
-                <div id="slideshow">
-                </div>
-		<a rel="slideshow" href="{$workspace}/images/staff-intro.jpg"></a>
-		<a rel="slideshow" href="{$workspace}/images/slideshow1.jpg"></a>
-		<a rel="slideshow" href="{$workspace}/images/slideshow2.jpg"></a>
-		<a rel="slideshow" href="{$workspace}/images/slideshow3.jpg"></a>
-		<a rel="slideshow" href="{$workspace}/images/slideshow4.jpg"></a>
-		<a rel="slideshow" href="{$workspace}/images/slideshow5.jpg"></a>
-		<a rel="slideshow" href="{$workspace}/images/staff-intro.jpg"></a>
-		<a rel="slideshow" href="{$workspace}/images/staff-intro2.jpg"></a>
-                <noscript><a href="{$root}/office"><img src="{$workspace}/images/staff-intro.jpg" /></a></noscript><br /><br />
--->
 		<img src="{$workspace}/images/superior-medical-care.jpg" />
 		<p>
-			Premier Medical Care is a concierge 24/7 medical practice in Jupiter, FL. Make an investment in your health with us.
+			Premier Medical Care is a concierge 24/7 medical practice in beautiful Palm Beach Florida, with an office in Jupiter. Make an investment in your health with us.
 		</p>
 	</div>
 	
