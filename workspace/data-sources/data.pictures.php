@@ -5,10 +5,10 @@
 	Class datasourcepictures extends Datasource{
 		
 		public $dsParamROOTELEMENT = 'pictures';
-		public $dsParamORDER = 'desc';
+		public $dsParamORDER = 'asc';
 		public $dsParamLIMIT = '50';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		public $dsParamSORT = 'system:id';
+		public $dsParamSORT = 'priority';
 		public $dsParamSTARTPAGE = '1';
 		public $dsParamINCLUDEDELEMENTS = array(
 				'caption',
@@ -25,10 +25,10 @@
 					 'name' => 'Pictures',
 					 'author' => array(
 							'name' => 'scott tesoriere',
-							'website' => 'http://localhost/pmc',
+							'website' => 'http://premiermedicalcarepb.com',
 							'email' => 'scott@tesoriere.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-10-07T15:03:19+00:00');	
+					 'release-date' => '2009-10-10T17:46:03+00:00');	
 		}
 		
 		public function getSource(){

@@ -181,6 +181,12 @@ body
 				font-weight: normal
 				font-style: italic
 				font-size: .8em
+			dl
+				dd
+					font-size: .8em
+					list-style-type: circle
+					padding: 0px
+					text-indent: -1em
 			ul
 				+horizontal-list
 				li
@@ -206,13 +212,13 @@ body
 					a
 						font-size: .8em
 					img
-						width: 180px
+						width: 118px
 						height: auto
 					.left
-						+column(4.5)
+						+column(3)
 					.right
 						+prepend(0)
-						+column(4.5)
+						+column(6)
 					p
 						font-size: .8em
 						margin-top: 10px
@@ -236,18 +242,16 @@ body
 				display: inline
 				font-size: 1em
 			ul
-				+horizontal-list
 				li.alt
-					background-color: #eee
+					// background-color: #eee
 					color: black
 				li
-					+column(3.8)
-					padding: 25px
-					padding-bottom: 60px
+					padding: 5px
+					padding-bottom: 10px
 					white-space: normal
 					color: #373737
-					border-bottom: 1px solid #aaa
-					height: 80px
+					color: black
+					// border-bottom: 1px solid #aaa
 					&.no-border
 						border-bottom: 0px
 					&:hover

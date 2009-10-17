@@ -5,6 +5,7 @@
 
 <xsl:template match="data">
 	<h2>We provide</h2>
+        <img class="photo float-right" src="{$workspace}/images/staff-intro.jpg" />
 <ul>
 	<li>Personalized <b>24/7</b> Medical Care</li>
 	<li class="alt"><em>Same Day</em> Appointments</li>
@@ -23,7 +24,7 @@
 	<li class="last no-border alt">Peace of mind... <em>&#8220;Priceless!&#8221;</em></li>
 </ul>
 <h3>Any questions? Please don't hestitate <a href="{$root}/contact">to contact us!</a></h3>
-<p>You can call us at +1 (561) 745 0072, and you can find more detailed contact information <a href="{$root}/contact">by visiting the contact page and clicking here.</a></p>
+<p>You can call us at (561) 745-0072, and you can find more detailed contact information <a href="{$root}/contact">by visiting the contact page and clicking here.</a></p>
 </xsl:template>
 
 </xsl:stylesheet>

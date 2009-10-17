@@ -38,17 +38,25 @@
 		<xsl:text disable-output-escaping="yes">&lt;!--[if IE ]></xsl:text>
 			<link rel="stylesheet" type="text/css" media="screen, projection" href="{$workspace}/css/ie.css"/>
 		<xsl:text disable-output-escaping="yes">&lt;![endif]--></xsl:text>
+		<xsl:if test="$root-page != 'home'">
 		<link rel="stylesheet" type="text/css" media="screen" href="{$workspace}/css/colorbox.css" />
+		</xsl:if>
+
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 		<script type="text/javascript" src="{$workspace}/javascript/jquery.colorbox-min.js"></script>
  		<script type="text/javascript" src="{$workspace}/javascript/analytics.js"></script>
 		<script type="text/javascript" src="{$workspace}/javascript/site.js"></script>
+                <xsl:if test="$root-page = 'home'">
+ 		<script type="text/javascript" src="{$workspace}/javascript/jquery.cycle.lite.min.js"></script>
+ 		<script type="text/javascript" src="{$workspace}/javascript/home.js"></script>
+                </xsl:if>
 		<xsl:if test="$root-page = 'contact'">
-	    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-		  <script type="text/javascript" src="http://www.google.com/jsapi?autoload=%7Bmodules%3A%5B%7Bname%3A%22maps%22%2Cversion%3A3%2Cother_params%3A%22sensor%3Dfalse%22%7D%5D%7D"></script>			
+		<link rel="stylesheet" type="text/css" media="screen" href="{$workspace}/css/forms.css" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	  <script type="text/javascript" src="http://www.google.com/jsapi?autoload=%7Bmodules%3A%5B%7Bname%3A%22maps%22%2Cversion%3A3%2Cother_params%3A%22sensor%3Dfalse%22%7D%5D%7D&amp;key=ABQIAAAAxNlWEKpbOHkXhcfIsQgzdRTHx7NYF8e2vA5EMVVbSPvYV25_OBS2jiUxWgkNWYsjvm-rdjkVP6yz3Q"></script>
 		</xsl:if>
 </head>
-<body>
+<body id="{$root-page}">
 	<div id="container">
 		<div id="header">
 			<div id="logo">
@@ -82,13 +90,14 @@
 			<div id="middle">
 				<h2>Contact Us</h2>
 				<address>
-					+1 561 745 0072<br />
-					Fax +1 561 745 0074
+					(561) 745-0072<br />
+					Fax (561) 745-0074
 				</address>
 			</div>
 			<div id="right">
 				<h2>Navigate the Site</h2>
 				<ul>
+                                        <li><a href="{$root}">Home</a></li>
 					<xsl:apply-templates select="data/navigation" mode="bottom" />
 				</ul>
 			</div>

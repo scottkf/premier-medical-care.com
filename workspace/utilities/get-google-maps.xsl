@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Name: Get Google Map
-  Version: 1.2 (now built for Google Maps API v3 w/ multiple map support)
-  Changes: Removed need for API Key; Added parameters map-type and zoom-level; Added the parameter map-id
+  Version: 1.3 (now built for Google Maps API v3 w/ multiple map support)
+  Changes: Need API Key for Geocode support. This changed when Google added their language support in v3
   Author: Brian Zerangue <brian.zerangue@gmail.com>
   URL: http://symphony-cms.com/downloads/xslt/file/25937/
   
@@ -15,20 +15,23 @@
   Steps to use:
   ====================
 
-1) Insert the following meta element and script element in the head element of your html
+1) Get Google Maps API Key (for geocoding support)
+
+2) In the <xsl:variable> api-key, replace YOUR_API_KEY_HERE, with your Google Maps API Key
+
+3) Insert the following meta element and script element in the head element of your html
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	  <script type="text/javascript" src="http://www.google.com/jsapi?autoload=%7Bmodules%3A%5B%7Bname%3A%22maps%22%2Cversion%3A3%2Cother_params%3A%22sensor%3Dfalse%22%7D%5D%7D"></script>
+	  <script type="text/javascript" src="http://www.google.com/jsapi?autoload=%7Bmodules%3A%5B%7Bname%3A%22maps%22%2Cversion%3A3%2Cother_params%3A%22sensor%3Dfalse%22%7D%5D%7D&key=MY_KEY"></script>
 
-2) Import your template via xsl:import
+4) Import your template via xsl:import
 
-    <xsl:import href="../utilities/get-google-maps.xsl"/>
 
-3) Call the template get-google-map and populate the with-param statements with the fields you have setup in Symphony.
+5) Call the template get-google-map and populate the with-param statements with the fields you have setup in Symphony.
 
     <xsl:call-template name="get-google-map">
       <xsl:with-param name="map-type" select="'HYBRID'"/>
-	<xsl:with-param name="zoom-level" select="'17'"/>
+	    <xsl:with-param name="zoom-level" select="'17'"/>
       <xsl:with-param name="location-name" select="location"/>
       <xsl:with-param name="street-address" select="address"/>
       <xsl:with-param name="city" select="city"/>
@@ -38,11 +41,11 @@
       <xsl:with-param name="map-height" select="'350px'"/>
     </xsl:call-template>
   
-4) If you want to add multiple maps, call the templates but make sure to call the with-param name="map-id" and name your map id. Like so...
+6) If you want to add multiple maps, call the templates but make sure to call the with-param name="map-id" and name your map id. Like so...
   
-<xsl:call-template name="get-google-map">
+	<xsl:call-template name="get-google-map">
       <xsl:with-param name="map-type" select="'HYBRID'"/>
-	<xsl:with-param name="zoom-level" select="'17'"/>
+	    <xsl:with-param name="zoom-level" select="'17'"/>
       <xsl:with-param name="location-name" select="location"/>
       <xsl:with-param name="street-address" select="address"/>
       <xsl:with-param name="city" select="city"/>
@@ -52,10 +55,10 @@
       <xsl:with-param name="map-height" select="'350px'"/>
     </xsl:call-template>
 
-<xsl:call-template name="get-google-map">
+		<xsl:call-template name="get-google-map">
       <xsl:with-param name="map-id" select="'map_canvas_2'"/>
       <xsl:with-param name="map-type" select="'HYBRID'"/>
-	<xsl:with-param name="zoom-level" select="'17'"/>
+			<xsl:with-param name="zoom-level" select="'17'"/>
       <xsl:with-param name="location-name" select="location"/>
       <xsl:with-param name="street-address" select="address"/>
       <xsl:with-param name="city" select="city"/>
@@ -127,7 +130,7 @@
 	
 				<xsl:choose>
 						<xsl:when test="$map-id!=''"><div id="{$map-id}" style="width: 630px; height: 350px; border: 7px solid #ddd;"></div></xsl:when>
-						<xsl:otherwise><div id="map_canvas" style="width: 630px; height: 350px;"><!--Maps Here--></div></xsl:otherwise>
+						<xsl:otherwise><div id="map_canvas" style="width: 630px; height: 350px; border: 7px solid #ddd;"><!--Maps Here--></div></xsl:otherwise>
 					</xsl:choose>
         </div>
       </xsl:if>	
@@ -138,7 +141,7 @@
 		<xsl:variable name="encodedAddress">
 	    	<xsl:value-of select="translate($address,' ','+')"/>
 		</xsl:variable>
-		<xsl:variable name="urlString">http://maps.google.com/maps/geo?q=<xsl:value-of select="$encodedAddress"/>&amp;output=xml</xsl:variable>
+		<xsl:variable name="urlString">http://maps.google.com/maps/geo?q=<xsl:value-of select="$encodedAddress"/>&amp;output=xml&amp;key=ABQIAAAAxNlWEKpbOHkXhcfIsQgzdRTHx7NYF8e2vA5EMVVbSPvYV25_OBS2jiUxWgkNWYsjvm-rdjkVP6yz3Q</xsl:variable>
 
 		<xsl:variable name="geocoder" select="document($urlString)"/>
 		<xsl:for-each select="$geocoder//*[name()='coordinates']">
