@@ -13,11 +13,18 @@
                         <img src="{$workspace}/images/slideshow3.jpg" class="photo" />
                         <img src="{$workspace}/images/slideshow4.jpg" class="photo" />
                         <img src="{$workspace}/images/slideshow5.jpg" class="photo" />
+                        <img src="{$workspace}/images/staff-intro.jpg" class="photo" />
+                        <img src="{$workspace}/images/staff-intro.jpg" class="photo" />
+                        <img src="{$workspace}/images/staff-intro.jpg" class="photo" />
+                        <img src="{$workspace}/images/staff-intro.jpg" class="photo" />
                 </div><div style="clear: both"></div>
 		<img src="{$workspace}/images/superior-medical-care.jpg" />
 		<p>
-			Premier Medical Care is a concierge 24/7 medical practice in beautiful Palm Beach Florida, with an office in Jupiter. Make an investment in your health with us.
+			Premier Medical Care of the Palm Beaches is a "concierge-style" medical practice located in beautiful Jupiter, FL.
 		</p>
+                <p>
+                        <img alt="Make an investment in your health with us!" src="{$workspace}/images/investment.jpg" />
+                </p>
 	</div>
 	
 	<div class="services">

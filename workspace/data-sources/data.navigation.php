@@ -15,10 +15,10 @@
 					 'name' => 'Navigation',
 					 'author' => array(
 							'name' => 'scott tesoriere',
-							'website' => 'http://localhost/pmc',
-							'email' => 'scott@tesoriere.com'),
+							'website' => 'http://premiermedicalcarepb.com',
+							'email' => 'scott.tesoriere@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-10-06T18:17:44+00:00');	
+					 'release-date' => '2009-10-21T00:29:59+00:00');	
 		}
 		
 		public function getSource(){
@@ -48,6 +48,9 @@
 	    </page>
 	    <page handle=\"milstein\">
 	        <name>Meet Dr Milstein</name>
+	    </page>
+	    <page handle=\"home\">
+	        <name>Home</name>
 	    </page>
 </navigation>";
 			}

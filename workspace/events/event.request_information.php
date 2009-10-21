@@ -16,9 +16,9 @@
 					 'author' => array(
 							'name' => 'scott tesoriere',
 							'website' => 'http://premiermedicalcarepb.com',
-							'email' => 'scott@tesoriere.com'),
+							'email' => 'scott.tesoriere@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-10-17T18:23:57+00:00',
+					 'release-date' => '2009-10-21T00:12:16+00:00',
 					 'trigger-condition' => 'action[request-information]');	
 		}
 
@@ -59,6 +59,15 @@
   &lt;/label>
   &lt;label>Email
     &lt;input name="fields[email]" type="text" />
+  &lt;/label>
+  &lt;label>Phone Number
+    &lt;input name="fields[phone-number]" type="text" />
+  &lt;/label>
+  &lt;label>Comments
+    &lt;textarea name="fields[comments]" rows="15" cols="50">&lt;/textarea>
+  &lt;/label>
+  &lt;label>Address
+    &lt;textarea name="fields[address]" rows="15" cols="50">&lt;/textarea>
   &lt;/label>
   &lt;input name="action[request-information]" type="submit" value="Submit" />
 &lt;/form></code></pre>

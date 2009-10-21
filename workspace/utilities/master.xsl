@@ -23,10 +23,10 @@
 		<xsl:value-of select="$page-title"/>
 	</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Premier Medical Care is a concierge service in Palm Beach, FL" />
-  <meta name="keywords" content="concierge doctor, concierge palm beach, concierge jupiter" />
-  <meta name="copyright" content="Premier Medical Care" />
-  <meta name="company" content="Premier Medical Care" />
+  <meta name="description" content="Premier Medical Care of the Palm Beaches is a concierge service in Jupiter, FL. We strive to give our patients the best possible care" />
+  <meta name="keywords" content="concierge doctor, concierge palm beach, concierge jupiter, milstein, concierge milstein" />
+  <meta name="copyright" content="Premier Medical Care of the Palm Beaches" />
+  <meta name="company" content="Premier Medical Care of the Palm Beaches" />
   <!--
     
     Looking is learning, taking is learning, taking credit is :(

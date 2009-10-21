@@ -60,6 +60,8 @@
 			<img class="photo" src="{$workspace}/images/milstein-kids-7.jpg" />
 		</div>                
         </div>
+<h3 style="clear: both">Any questions? Please don't hestitate to contact us!</h3>
+<p>You can call us at (561) 745-0072, and you can find more detailed contact information <a href="{$root}/contact">by visiting the contact page and clicking here.</a></p>
 
 </xsl:template>
 

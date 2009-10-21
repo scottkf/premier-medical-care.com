@@ -17,11 +17,11 @@
 	<li><em>Annual</em> Executive Level Physical Exams</li>
 	<li><em>Comprehensive</em> In Office Blood Panel, Urinalysis and EKG</li>
 	<li class="alt">Coordinated Care with Specialists In and Out of State</li>
-	<li><em>Emergency</em> Air Ambulance Transport Flights Arranged if Needed</li>
+	<li>Discounted <em>Emergency</em> Air Ambulance Transport Flights Arranged if needed</li>
 	<li class="alt">Intimate Waiting Room with High-Speed Internet and Refreshments</li>
 	<li class="no-border alt">Appointments for Out of Town Family and Guests if Needed</li>
 	<li class="no-border">In-office Ultrasound Scanning Technology</li>
-	<li class="last no-border alt">Peace of mind... <em>&#8220;Priceless!&#8221;</em></li>
+	<li class="last no-border alt"><strong>Peace of mind... <em>&#8220;Priceless!&#8221;</em></strong></li>
 </ul>
 <h3>Any questions? Please don't hestitate <a href="{$root}/contact">to contact us!</a></h3>
 <p>You can call us at (561) 745-0072, and you can find more detailed contact information <a href="{$root}/contact">by visiting the contact page and clicking here.</a></p>
